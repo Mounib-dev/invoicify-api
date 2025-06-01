@@ -1,7 +1,7 @@
 {
-  "name": "express-typescript-starter-template",
+  "name": "invoicify-api",
   "version": "1.0.0",
-  "description": "Express API with TypeScript and Jest starter template",
+  "description": "Express API with TypeScript",
   "main": "dist/app.js",
   "scripts": {
     "start": "ts-node src/index.ts",
