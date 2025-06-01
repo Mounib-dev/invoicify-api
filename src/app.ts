@@ -1,21 +1,21 @@
-import dotenv from "dotenv";
+import dotenv from 'dotenv';
 dotenv.config();
 
-import express, { RequestHandler } from "express";
-import morgan from "morgan";
-import helmet from "helmet";
-import cors from "cors";
+import express from 'express';
+import morgan from 'morgan';
+import helmet from 'helmet';
+import cors from 'cors';
 
-import api from "./routes";
+import api from './routes';
 
 const app = express();
 
-app.use(morgan("dev"));
+app.use(morgan('dev'));
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
-app.use("/", api);
+app.use('/', api);
 
 const port = process.env.PORT || 3000;
 
